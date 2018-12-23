@@ -28,8 +28,8 @@
     .bg-drkgrey{
       background-color: rgba(88, 88, 89, 0.8) ;
     }
-    .search-list{
-      
+    #myMenu{
+      display: none;
     }
   </style>
   <body>
@@ -64,7 +64,7 @@
     </ul>
       <div class="row">
   <div style="background-color:#bbb;">
-    <input class="col-sm-6" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <input class="col-sm-6" type="text" id="mySearch" onfoucusout=("hideOnfocusout()") onclick=("toggleMenuBlock") onkeyup="activateFilter()" placeholder="Search.." title="Type in a category">
     <ul class="search-list" id="myMenu">
       <li><a href="#">HTML</a></li>
       <li><a href="#">CSS</a></li>
@@ -87,7 +87,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
     <script>
-function myFunction() {
+function activateFilter() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("mySearch");
   filter = input.value.toUpperCase();
@@ -102,13 +102,16 @@ function myFunction() {
     }
   }
 }
-      function myFunction() {
+      function toggleMenuBlock() {
   var x = document.getElementById("myMenu");
   if (x.style.display === "none") {
     x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+}
+      function hideOnfocusout() {
+  var y = document.getElementById("myMenu");
+        if (y.style.display === "block"){
+          y.style.display = "none";
+        }
 }
 </script>
 </html>
