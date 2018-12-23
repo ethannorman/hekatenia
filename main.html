@@ -67,54 +67,53 @@
     </ul>
       <div class="row">
   <div style="background-color:#bbb;">
-    <input class="col-sm-6" type="text" id="mySearch" onfocusout="hideOnfocusout()" onclick="toggleMenuBlock()" onkeyup="activateFilter()" placeholder="Search.." title="Type in a category">
-    <ul class="menu" id="myMenu">
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
-      <li><a href="#">PHP</a></li>
-      <li><a href="#">Python</a></li>
-      <li><a href="#">jQuery</a></li>
-      <li><a href="#">SQL</a></li>
-      <li><a href="#">Bootstrap</a></li>
-      <li><a href="#">Node.js</a></li>
+    <input class="col-sm-6" type="text" id="searchInput"  placeholder="Search..." title="Type in a category">
+    <ul class="menu" id="links">
+      <li><a href="#">Crystals</a></li>
+      <li><a href="#">Herbs</a></li>
+      <li><a href="#">Hecate</a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
     </ul>
   </div>
   </div>
 </nav>
 
     <!-- Optional JavaScript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
-    <script>
-function activateFilter() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myMenu");
-  li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
+   $("#searchInput").on('keyup', function() {
+  var searchValue = $(this).val();
+  searchAndFilter(searchValue)
+});
+
+function searchAndFilter(searchTerm) {
+  if (searchTerm == '') {
+    $("#links li").hide()
+  } else {
+    $("#links li").each(function() {
+      var currentText = $(this).text();
+      currentText = currentText.toUpperCase();
+      searchTerm = searchTerm.toUpperCase();
+      if (currentText.indexOf(searchTerm) >= 0) {
+        $(this).show();
+      }
+    });
   }
 }
-      function toggleMenuBlock() {
-  var x = document.getElementById("myMenu");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-}
-      function hideOnfocusout() {
-  var y = document.getElementByClassName(".menu");
-        if (y.style.display === "block"){
-          y.style.display = "none";
-        }
-}
+
+$(document).ready(function() {
+  $("#links li").hide();
+});
 </script>
 </html>
