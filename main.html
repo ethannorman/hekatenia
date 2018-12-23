@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-<!-- AIzaSyCJG7kZC3nx6hfPaKxsxzqUwuhqu8aiFoo -->
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -28,6 +27,9 @@
 } 
     .bg-drkgrey{
       background-color: rgba(88, 88, 89, 0.8) ;
+    }
+    .search-list{
+      
     }
   </style>
   <body>
@@ -61,12 +63,11 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input onkeyup="showResult(this.value)" class="form-control mr-sm-2" type="text" placeholder="Search">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
       <div class="row">
-  <div class="" style="background-color:#bbb;">
-    <h2>Menu</h2>
-    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-    <ul id="myMenu">
+  <div style="background-color:#bbb;">
+    <input class="form-control mr-sm-2" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul class="search-list" id="myMenu">
       <li><a href="#">HTML</a></li>
       <li><a href="#">CSS</a></li>
       <li><a href="#">JavaScript</a></li>
