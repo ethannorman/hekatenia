@@ -31,6 +31,9 @@
     #myMenu{
       display: none;
     }
+    .menu{
+      
+    }
   </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-drkgrey">
@@ -65,7 +68,7 @@
       <div class="row">
   <div style="background-color:#bbb;">
     <input class="col-sm-6" type="text" id="mySearch" onfocusout="hideOnfocusout()" onclick="toggleMenuBlock()" onkeyup="activateFilter()" placeholder="Search.." title="Type in a category">
-    <ul class="search-list" id="myMenu">
+    <ul class="menu" id="myMenu">
       <li><a href="#">HTML</a></li>
       <li><a href="#">CSS</a></li>
       <li><a href="#">JavaScript</a></li>
@@ -108,7 +111,7 @@ function activateFilter() {
     x.style.display = "block";
 }
       function hideOnfocusout() {
-  var y = document.getElementById("myMenu");
+  var y = document.getElementByClassName(".menu");
         if (y.style.display === "block"){
           y.style.display = "none";
         }
