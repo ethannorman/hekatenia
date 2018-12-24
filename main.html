@@ -44,7 +44,12 @@
       list-style-type: none;
     }
     .search-box{
-      max-width: 80px!important;
+      -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+      width: 125px;
+    }
+    .search-box:focus{
+      width: 45%;
     }
   </style>
   <body>
