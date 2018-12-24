@@ -42,6 +42,7 @@
       z-index: 1000;
     }
     .menu-container{
+	    max-width: 140px;
       background-color: rgba(88, 88, 89, 0.8) ;
       z-index: 1000;
       float: none;
@@ -51,6 +52,9 @@
     li{
       list-style-type: none;
       color: white;
+    }
+    .menu-item:hover{
+      text-decoration: none;	  
     }
     .search-box{
       max-width: 140px;
@@ -102,6 +106,7 @@ ul, li{
 		color: silver;  
 		  }
   </style>
+	
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-drkgrey">
       <div class="row">
@@ -120,13 +125,13 @@ ul, li{
 		  </div>
       <div id="menuBox" class="card menu-container">
     <ul class=" d-inline menu" id="links">
-      <li><a class="src-link" href="#">Stones</a></li>
-      <li><a class="src-link" href="#">Hecate</a></li>
-      <li><a class="src-link" href="#">Herbs</a></li>
-      <li><a class="src-link" href="#">Rites</a></li>
-      <li><a class="src-link" href="#"></a></li>
-      <li><a class="src-link" href="#"></a></li>
-      <li><a class="src-link" href="#"></a></li>
+      <li><a class="src-link menu-item" href="#">Stones</a></li>
+      <li><a class="src-link menu-item" href="#">Hecate</a></li>
+      <li><a class="src-link menu-item" href="#">Herbs</a></li>
+      <li><a class="src-link menu-item" href="#">Rites</a></li>
+      <li><a class="src-link menu-item" href="#"></a></li>
+      <li><a class="src-link menu-item" href="#"></a></li>
+      <li><a class="src-link menu-item" href="#"></a></li>
     </ul>
       </div>
       </div>
