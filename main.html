@@ -86,12 +86,10 @@ ul, li{
       <div class="row">
   <div class="navbar-brand">E'sRealm
       <div class="d-inline-block">
-        <div class="row">
       <input class="output search-box form-control" type="text" id="searchInput"  placeholder="Search" title="Search for more content.">
-        <button class="btn btn-remove-text clear">
+        <button onclick="hideMenu()" class="btn btn-remove-text clear">
           <span>Clear</span>
         </button>
-        </div>
       <div class="card menu-container">
     <ul class=" d-inline menu" id="links">
       <li><a class="src-link" href="#">Stones</a></li>
@@ -172,11 +170,7 @@ function searchAndFilter(searchTerm) {
         $(".menu-container").show()
         $(this).show();
         
-      } else {
-	      $("#links li").hide();
-	      $("menu-container").hide();
-	
-}
+      } 
     });
   }
 }
@@ -191,5 +185,11 @@ var textarea = document.querySelector('.output');
 input.addEventListener('click', function () {
 	textarea.value = '';
 }, false);
+	    function hideMenu() {
+  var x = document.getElementById("");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  }
+} 
 </script>
 </html>
