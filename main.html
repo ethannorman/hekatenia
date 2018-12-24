@@ -90,7 +90,7 @@ ul, li{
         <button onclick="hideMenu()" class="btn btn-remove-text clear">
           <span>Clear</span>
         </button>
-      <div class="card menu-container">
+      <div id="menuBox" class="card menu-container">
     <ul class=" d-inline menu" id="links">
       <li><a class="src-link" href="#">Stones</a></li>
       <li><a class="src-link" href="#">Hecate</a></li>
@@ -170,7 +170,9 @@ function searchAndFilter(searchTerm) {
         $(".menu-container").show();
         $(this).show();
         
-      } 
+      } else{
+	$(".menu-container").hide();
+      }
     });
   }
 }
@@ -186,7 +188,7 @@ input.addEventListener('click', function () {
 	textarea.value = '';
 }, false);
 	    function hideMenu() {
-  var x = document.getElementById("");
+  var x = document.getElementById("#menuBox");
   if (x.style.display === "block") {
     x.style.display = "none";
   }
