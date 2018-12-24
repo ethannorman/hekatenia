@@ -108,6 +108,7 @@
 function searchAndFilter(searchTerm) {
   if (searchTerm == '') {
     $("#links li").hide()
+    $(".menu-container").hide()
   } else {
     $(".menu-container").show()
     $("#links li").each(function() {
