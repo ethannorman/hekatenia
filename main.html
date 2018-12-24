@@ -108,8 +108,8 @@
 function searchAndFilter(searchTerm) {
   if (searchTerm == '') {
     $("#links li").hide()
-    $(".menu-container").hide()
   } else {
+    $(".menu-container").show()
     $("#links li").each(function() {
       var currentText = $(this).text();
       currentText = currentText.toUpperCase();
@@ -123,6 +123,7 @@ function searchAndFilter(searchTerm) {
 
 $(document).ready(function() {
   $("#links li").hide();
+  $(".menu-container").hide()
 });
 </script>
 </html>
