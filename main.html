@@ -71,8 +71,8 @@
     </ul>
         <div class="d-inline">
     <input class="form-control mr-sm-2" type="text" id="searchInput"  placeholder="Search" title="Search for more content.">
-          <div class="card menu">
-    <ul class=" d-inline " id="links">
+          <div class="card menu-container">
+    <ul class=" d-inline menu" id="links">
       <li><a href="#">Stones</a></li>
       <li><a href="#">Herbs</a></li>
       <li><a href="#">Hecate</a></li>
@@ -108,6 +108,7 @@
 function searchAndFilter(searchTerm) {
   if (searchTerm == '') {
     $("#links li").hide()
+    $(".menu-container").hide()
   } else {
     $("#links li").each(function() {
       var currentText = $(this).text();
