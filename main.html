@@ -55,18 +55,16 @@
       box-shadow: 0px 0px 0px 0.2rem white;
       color: white !important;
     }
-    ::placeholder {
-  color: White;
-  opacity: 1; /* Firefox */
+    .form-control::-webkit-input-placeholder {
+    color: red;
+}
+.form-control::-ms-input-placeholder {
+    color: red;
+}
+.form-control::-ms-input-placeholder {
+    color: red;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: White;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
- color: White;
-}
   </style>
   <body>
     <div>
