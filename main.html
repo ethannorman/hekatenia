@@ -39,9 +39,11 @@
       z-index: 1000;
       float: none;
       position: absolute;
+      
     }
     li{
       list-style-type: none;
+      color: white;
     }
     .search-box{
       max-width: 180px;
@@ -68,6 +70,15 @@ ul, li{
     margin: 0;
     padding: 0;
 }
+    .src-link{
+     color: white; 
+    }
+    src-link:active{
+     color: grey;
+    }
+    src-link:hover{
+      color: silver;
+    }
   </style>
   <body>
     <div>
@@ -78,16 +89,13 @@ ul, li{
       <input class="search-box form-control" type="text" id="searchInput"  placeholder="Search" title="Search for more content.">
       <div class="card menu-container">
     <ul class=" d-inline menu" id="links">
-      <li><a href="#">Stones</a></li>
-      <li><a href="#">Herbs</a></li>
-      <li><a href="#">Hecate</a></li>
-      <li><a href="#">Rites</a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      
+      <li><a class="src-link" href="#">Stones</a></li>
+      <li><a class="src-link" href="#">Hecate</a></li>
+      <li><a class="src-link" href="#">Herbs</a></li>
+      <li><a class="src-link" href="#">Rites</a></li>
+      <li><a class="src-link" href="#"></a></li>
+      <li><a class="src-link" href="#"></a></li>
+      <li><a class="src-link" href="#"></a></li>
     </ul>
       </div>
       </div>
