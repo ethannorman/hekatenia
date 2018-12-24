@@ -172,7 +172,11 @@ function searchAndFilter(searchTerm) {
         $(".menu-container").show()
         $(this).show();
         
-      }
+      } else {
+	      $("#links li").hide();
+	      $("menu-container").hide();
+	
+}
     });
   }
 }
