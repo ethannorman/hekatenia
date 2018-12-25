@@ -97,12 +97,20 @@ ul, li{
 	  }
 	  .btn-remove-text:focus{
 	background: none !important;
-      border-color: rgba(100, 100, 100, 0.0) !important;
-      box-shadow: 0px 0px 0px 0.1rem white;
+      box-shadow: none;
       color: white !important;
 	  .nav-link{
 		color: silver;  
 		  }
+			.btn-remove-text:active{
+			box-shadow: 0px 0px 0px 0.1rem white;
+			color: white !important;
+			background: none !important;
+			}
+			.custom-jumbotron{
+				background-color: rgba(0, 0, 1, 0.5);
+				color: white;
+			}
   </style>
 	
   <body>
@@ -169,7 +177,58 @@ ul, li{
         </div>
         
 </nav>
-
+<div class="container">
+	<div class="jumbotron custom-jumbotron">
+		<h1 class="text-center">
+			Welcome! Fellow Witches!
+		</h1>
+		<h2>
+			Learn more about Witchcraft here! 
+		</h2>
+	</div>
+</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="text-center">
+							   Learn
+							</h3>
+							<div class="card-body">
+								<p>
+									Learn what it means to be a witch.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="text-center">
+								Practice
+							</h3>
+							<div class="card-body">
+								Practice your rites and magikal workings.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="text-center">
+								Resources
+							</h3>
+							<div class="card-body">
+								There are many stores that have supplies for your works.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     <!-- Optional JavaScript -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
