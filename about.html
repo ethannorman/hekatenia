@@ -18,6 +18,7 @@
 	font-family: 'Montserrat';	  
 	  }
   body { 
+	  padding-top: 55px;
 	  font-family: 'Montserrat';
   /* The image used */
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/dc/Zonnestralen.JPG');
@@ -32,7 +33,7 @@
   background-size: cover;
 } 
     .bg-drkgrey{
-      background-color: rgba(0, 0, 1, 0.5);
+      background-color: rgba(0, 0, 1, 0.9);
 	    padding: .2rem 1rem;
     }
     #myMenu{
@@ -40,20 +41,20 @@
     }
     .menu{
       z-index: 1000;
+width: 140px !important;
     }
     .menu-container{
       background-color: rgba(88, 88, 89, 0.8) ;
       z-index: 1000;
-      float: none;
       position: absolute;
-      
-    }
-	  .menu-item:hover{
-      text-decoration: none;	  
+	width: 140px;
     }
     li{
       list-style-type: none;
       color: white;
+    }
+    .menu-item:hover{
+      text-decoration: none;	  
     }
     .search-box{
       max-width: 140px;
@@ -62,6 +63,9 @@
       color: white !important;
 	    padding: 2px;
     }
+	  .search-box::-ms-clear{
+		display: none;
+	  }
     .search-box:focus{
       background: none !important;
       border-color: rgba(100, 100, 100, 0.0) !important;
@@ -98,13 +102,46 @@ ul, li{
 	  }
 	  .btn-remove-text:focus{
 	background: none !important;
-      border-color: rgba(100, 100, 100, 0.0) !important;
-      box-shadow: 0px 0px 0px 0.1rem white;
+      box-shadow: none;
       color: white !important;
 	  }
+	  .nav-link{
+		color: silver;  
+}
+.btn-remove-text:active{
+color: white !important;
+background: none !important;
+border-color: rgba(100, 100, 100, 0.0) !important;
+box-shadow: 0px 0px 0px 0.1rem white;
+transition: .0s;
+}
+.custom-jumbotron{
+background-color: rgba(0, 0, 1, 0.5)!important;
+color: white;
+border-radius: 0px;
+}
+.card-custom-1{
+background-color: rgba(0, 0, 1, 0.5);
+color: white !important;
+}
+.jumbotron{
+background-color: rgba(0, 0, 1, 0.5);
+color:white;
+}
+button:focus{
+outline: none;  
+}
+.card-custom-2{
+background-color: rgba(0, 0, 1, 0.5)!important;
+color: white;
+}
+		.center{
+			text-align: center !important;
+		}
   </style>
+	
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-drkgrey">
+    <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-drkgrey">
       <div class="row">
   <div class="navbar-brand">E'sRealm
 	  
@@ -119,8 +156,8 @@ ul, li{
 			      
 		  </div>
 		  </div>
-      <div id="menuBox" class="card menu-container">
-    <ul class=" d-inline menu" id="links">
+      <div id="menuBox" class="menu-container">
+    <ul class="d-inline menu" id="links">
       <li><a class="src-link menu-item" href="#">Stones</a></li>
       <li><a class="src-link menu-item" href="#">Hecate</a></li>
       <li><a class="src-link menu-item" href="#">Herbs</a></li>
@@ -146,8 +183,8 @@ ul, li{
       <li class="nav-item">
         <a class="nav-link" href="main.html">Home</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="about.html">About</a>
+      <li class="nav-item">
+        <a class="nav-link active" href="about.html">About</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -167,7 +204,48 @@ ul, li{
         </div>
         
 </nav>
-
+<div class="container">
+	<div class="jumbotron custom-jumbotron">
+		<h1 class="text-center">
+			What is this site for?
+		</h1>
+		<h2 class="center">
+			This site is an oricle of knowledge of the Hekatean Pantheon of the pagan religions.
+		</h2>
+	</div>
+</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card card-custom-1">
+						<div class="card-header">
+							<h3 class="text-center">
+							Learn
+							</h3>
+						</div>
+							<div class="card-body">
+								<p>
+								Learn what it means to be a witch.
+								</p>
+							</div>
+						</div>
+					</div>
+				<div class="col-sm-6">
+					<div class="card card-custom-2">
+						<div class="card-header">
+							<h3 class="text-center">
+							Practice
+							</h3>
+						</div>
+							<div class="card-body">
+								<p>
+							Practice your rites and magikal workings.
+								</p>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
     <!-- Optional JavaScript -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
