@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/3e/Tree-256x256.png">
+	  <!-- Google Fonts -->
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet"> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Hekatenia | Hekate</title>
+    
+  </head>
+  <style>
+	  html{
+	  
+	  }
+  body { 
+	  padding-top: 55px;
+	  font-family: 'Montserrat' ;
+  /* The image used */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/dc/Zonnestralen.JPG');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+    .bg-drkgrey{
+      background-color: rgba(0, 0, 1, 0.9);
+	    padding: .2rem 1rem;
+    }
+    #myMenu{
+      display: none;
+    }
+    .menu{
+      z-index: 1000;
+width: 140px !important;
+    }
+    .menu-container{
+      background-color: rgba(88, 88, 89, 0.8) ;
+      z-index: 1000;
+      position: absolute;
+	width: 140px;
+    }
+    li{
+      list-style-type: none;
+      color: white;
+    }
+    .menu-item:hover{
+      text-decoration: none;	  
+    }
+    .search-box{
+      max-width: 140px;
+      background: none !important;
+      border: solid 2px white;
+      color: white !important;
+	    padding: 2px;
+    }
+	  .search-box::-ms-clear{
+		display: none;
+	  }
+    .search-box:focus{
+      background: none !important;
+      border-color: rgba(100, 100, 100, 0.0) !important;
+      box-shadow: 0px 0px 0px 0.1rem white;
+      color: white !important;
+    }
+    .form-control::-webkit-input-placeholder {
+    color: white;
+}
+.form-control::-ms-input-placeholder {
+    color: white;
+}
+.form-control::-ms-input-placeholder {
+    color: white;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+    .src-link{
+     color: white; 
+    }
+    .src-link:active{
+     color: grey;
+    }
+    .src-link:hover{
+      color: silver;
+    }
+.btn-remove-text{
+	background: none !important;
+      border: solid 2px white;
+      color: white !important;
+	padding: 2px;
+	  }
+	  .btn-remove-text:focus{
+	background: none !important;
+      box-shadow: none;
+      color: white !important;
+	  }
+	  .nav-link{
+		color: silver;  
+}
+.btn-remove-text:active{
+color: white !important;
+background: none !important;
+border-color: rgba(100, 100, 100, 0.0) !important;
+box-shadow: 0px 0px 0px 0.1rem white;
+transition: .0s;
+}
+.custom-jumbotron{
+background-color: rgba(0, 0, 1, 0.5)!important;
+color: white;
+border-radius: 0px;
+}
+.card-custom-1{
+background-color: rgba(0, 0, 1, 0.5);
+color: white !important;
+}
+.jumbotron{
+background-color: rgba(0, 0, 1, 0.5);
+color:white;
+}
+button:focus{
+outline: none;  
+}
+.card-custom-2{
+background-color: rgba(0, 0, 1, 0.5)!important;
+color: white;
+}
+		.center{
+			text-align: center !important;
+		}
+	  .navbar-brand{
+	font-size: 14px !important;	  
+	  }
+  </style>
+	
+  <body>
+    <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-drkgrey">
+      <div class="row">
+  <div class="navbar-brand">Hekatenia
+	  
+		  
+      <div class="d-inline-block">
+	      <div class="container">
+		      <div class=row>
+      <input class="output search-box form-control" type="text" id="searchInput"  placeholder="Search" title="Search for more content.">
+        <button onclick="hideMenu()" class=" btn btn-remove-text clear">
+          <span>Clear</span>
+        </button>
+			      
+		  </div>
+		  </div>
+      <div id="menuBox" class="menu-container">
+    <ul class="d-inline menu" id="links">
+      <li><a class="src-link menu-item" href="#">Stones</a></li>
+      <li><a class="src-link menu-item" href="hekate.html">Hekate</a></li>
+      <li><a class="src-link menu-item" href="herbs.html">Herbs</a></li>
+      <li><a class="src-link menu-item" href="#">Rites</a></li>
+      <li><a class="src-link menu-item" href="#"></a></li>
+      <li><a class="src-link menu-item" href="#"></a></li>
+      <li><a class="src-link menu-item" href="#"></a></li>
+    </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      
+      
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link rounded-bottom active" href="main.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Grimoire
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Stones</a>
+          <a class="dropdown-item" href="herbs.html">Herbs</a>
+          <a class="dropdown-item" href="hekate.html">Hekate</a>
+          <a class="dropdown-item" href="#">Rites</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">something</a>
+      </li>
+    </ul>
+        </div>
+        
+</nav>
+<div class="container">
+	<div class="jumbotron custom-jumbotron">
+		<h1 class="text-center">
+			Who Is Hekate?
+		</h1>
+		<h2 class="center">
+			Learn about Hekate and her history.
+		</h2>
+	</div>
+</div>
+		<div class="container">
+			
+		</div>
+    <!-- Optional JavaScript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+    <script>
+   $("#searchInput").on('keyup', function() {
+  var searchValue = $(this).val();
+  searchAndFilter(searchValue)
+});
+
+function searchAndFilter(searchTerm) {
+  if (searchTerm == '') {
+    $("#links li").hide()
+    $(".menu-container").hide()
+  } else {
+   
+    $("#links li").each(function() {
+      var currentText = $(this).text();
+      currentText = currentText.toUpperCase();
+      searchTerm = searchTerm.toUpperCase();
+      if (currentText.indexOf(searchTerm) >= 0) {
+        $(".menu-container").show();
+        $(this).show();
+        
+      }
+    });
+  }
+}
+
+$(document).ready(function() {
+  $("#links li").hide();
+  $(".menu-container").hide()
+});
+      var input = document.querySelector('.clear');
+var textarea = document.querySelector('.output');
+
+input.addEventListener('click', function () {
+	textarea.value = '';
+}, false);
+	    $(document).ready(function(){
+    $( '.clear' ).click(function() {
+        $( '#menuBox' ).hide();
+    });
+});
+
+</script>
+</html>
