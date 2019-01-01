@@ -170,6 +170,10 @@ transition: .0s;
  box-shadow: none;
  border: 2px solid white !important; 
 }
+.credits-menu{
+display: none;
+
+}
   </style>
 	
   <body>
@@ -255,12 +259,10 @@ transition: .0s;
 								<p class="text-center">
 								Ethan A. Norman
                 </p>
-              <div class="dropdown">
-
-                <button class="btn btn-warning" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button  class="hide-credits-menu btn btn-warning" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Credits <span>>></span>
                 </button>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div id="creditsMenu" class="credits-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="https://img0.etsystatic.com/006/0/6575953/il_340x270.361152998_m7la.jpg">
             https://img0.etsystatic.com/006/0/6575953/il_340x270.361152998_m7la.jpg
           </a>
@@ -332,6 +334,10 @@ input.addEventListener('click', function () {
         $( '#menuBox' ).hide();
     });
 });
-
+$(document).ready(function(){
+  $(".hide-credits-menu").click(function(){
+    $("#creditsMenu").toggle();
+  });
+});
 </script>
 </html>
