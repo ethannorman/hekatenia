@@ -162,6 +162,17 @@ color: white;
 .carousel-inner{
 	padding: 30px;
 	  }
+    .collapse-button:focus{
+outline: none;  
+}
+.collapse-button:active{
+border-color: rgba(100, 100, 100, 0.0) !important;
+box-shadow: 0px 0px 0px 0.1rem white;
+transition: .0s;
+}
+.collapse-button{
+ box-shadow: none; 
+}
   </style>
 	
   <body>
@@ -195,7 +206,7 @@ color: white;
       </div>
       </div>
       
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="collapse-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
       
