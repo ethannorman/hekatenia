@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <title>Hekatenia | About</title>
+    <title>Hekatenia | Activities</title>
     
   </head>
   <style>
@@ -175,6 +175,10 @@ transition: .0s;
 display: none;
 
 }
+.margin-bottom-2rem{
+
+  margin-bottom: 2rem;
+}
   </style>
 	
   <body>
@@ -221,7 +225,7 @@ display: none;
         <a class="nav-link" href="main.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link" href="about.html">About</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -235,7 +239,7 @@ display: none;
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="activities.html">Activities</a>
+        <a class="nav-link active" href="activities.html">Activities</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="contact.html">Contact</a>
@@ -247,15 +251,56 @@ display: none;
 <div class="container">
 	<div class="jumbotron custom-jumbotron">
 		<h1 class="text-center">
-			What is this site for?
+			Activities
 		</h1>
 		<h2 class="center">
-			This site is an oricle of knowledge on Hekatean Witchcraft.
+			Here are some activities.
 		</h2>
 	</div>
 </div>
 		<div class="container">
-					
+            <div class="card margin-bottom-2rem card-custom-1">
+            <div class="card-header">
+                <h3>
+                    Knowledge Test
+                </h3>
+                <p>Test your knowledge of Hekatean Witchcraft!</p>
+            </div>
+            <div class="card-body">
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="answerChoices1">
+                            Who is Hekate?
+                        </label>
+                        <div id="answerChoices1" class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneAOne" value="option1">
+  <label class="form-check-label" for="qOneAOne">
+    A Weapon
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneATwo" value="option2">
+  <label class="form-check-label" for="qOneATwo">
+    A Triple Goddess
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneAThree" value="option3">
+  <label class="form-check-label" for="qOneAThree">
+    A Band
+  </label>
+</div>
+                            </div>
+                        </div>
+                            
+                    </div>
+
+                </form>
+
+            </div>
+        </div>	
     </div>
     <!-- Optional JavaScript -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
