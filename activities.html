@@ -179,6 +179,7 @@ display: none;
 
   margin-bottom: 2rem;
 }
+
   </style>
 	
   <body>
@@ -275,26 +276,29 @@ display: none;
                             Who is Hekate?
                         </label>
                         <div id="answerChoices1" class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneAOne" value="option1">
+  <input  class="form-check-input" type="radio" name="exampleRadios" id="qOneAOne" value="A Weapon">
   <label class="form-check-label" for="qOneAOne">
     A Weapon
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneATwo" value="option2">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneATwo" value="A Triple Goddess">
   <label class="form-check-label" for="qOneATwo">
     A Triple Goddess
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneAThree" value="option3">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneAThree" value="A Band">
   <label class="form-check-label" for="qOneAThree">
     A Band
   </label>
 </div>
+<div id="resultOne">
+
+</div>
                             </div>
                         </div>
-                            
+                            </form>
                     </div>
 
                 </form>
@@ -355,6 +359,9 @@ $(document).ready(function(){
   $(".hide-credits-menu").click(function(){
     $("#creditsMenu").toggle();
   });
+});
+$( "#qOneAOne" ).on( "click", function() {
+  $( "#resultOne" ).html( $( "input:checked" ).val() + " is incorrect." );
 });
 </script>
 </html>
