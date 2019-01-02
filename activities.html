@@ -276,27 +276,27 @@ display: none;
                             Who is Hekate?
                         </label>
                         <div id="answerChoices1" class="form-check">
-  <input  class="form-check-input" type="radio" name="exampleRadios" id="qOneAOne" value="A Weapon">
+  <input  class="form-check-input" type="radio" name="exampleRadios" id="qOneAOne" value="">
   <label class="form-check-label" for="qOneAOne">
     A Weapon
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneATwo" value="A Triple Goddess">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneATwo" value="">
   <label class="form-check-label" for="qOneATwo">
     A Triple Goddess
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneAThree" value="A Band">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneAThree" value="">
   <label class="form-check-label" for="qOneAThree">
     A Band
   </label>
 </div>
-<div id="resultOne">
-
-</div>
                             </div>
+<button onclick="checkQ1Answers()">
+    Check Answers
+</button>
                         </div>
                             </form>
                     </div>
@@ -360,8 +360,14 @@ $(document).ready(function(){
     $("#creditsMenu").toggle();
   });
 });
-$( "#qOneAOne" ).on( "click", function() {
-  $( "#resultOne" ).html( $( "input:checked" ).val() + " is incorrect." );
-});
+var weapon = document.getElementById("#qOneAOne");
+var triplegoddess = document.getElementById("#qOneATwo");
+var band = document.getElementById("#qOneAThree");
+function checkQ1Answers(){
+if (weapon = document.getElementById("qOneAOne").checked = true){
+alert("Incorrect!");
+}
+
+}
 </script>
 </html>
