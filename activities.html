@@ -363,7 +363,10 @@ $(document).ready(function(){
 var weapon = document.getElementById("#qOneAOne");
 var triplegoddess = document.getElementById("#qOneATwo");
 var band = document.getElementById("#qOneAThree");
+var clearanswers = [document.getElementById("qOneAOne").checked = false,
+ document.getElementById("qOneATwo").checked = false, document.getElementById("qOneAThree").checked = false]
 function checkQ1Answers(){
+clearanswers = true;
 if (weapon = document.getElementById("qOneAOne").checked = true){
 alert("Incorrect!");
 }
