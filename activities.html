@@ -287,19 +287,19 @@ display: none;
                             Who is Hekate?
                         </label>
                         <div id="answerChoices1" class="form-check">
-  <input  class="form-check-input" type="radio" name="exampleRadios" id="qOneAOne" value="">
+  <input onclick="checkQ1A1()" class="form-check-input" type="radio" name="exampleRadios" id="qOneAOne" value="">
   <label class="form-check-label" for="qOneAOne">
     A Weapon <span id="resultQ1A1">Incorrect</span>
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneATwo" value="">
+  <input onclick="checkQ1A2()" class="form-check-input" type="radio" name="exampleRadios" id="qOneATwo" value="">
   <label class="form-check-label" for="qOneATwo">
     A Triple Goddess <span id="resultQ1A2">Correct</span>
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="qOneAThree" value="">
+  <input onclick="checkQ1A3()" class="form-check-input" type="radio" name="exampleRadios" id="qOneAThree" value="">
   <label class="form-check-label" for="qOneAThree">
     A Band <span id="resultQ1A3">Incorrect</span>
   </label>
@@ -368,20 +368,14 @@ $(document).ready(function(){
     $("#creditsMenu").toggle();
   });
 });
-var weapon = document.getElementById("qOneAOne");
-var triplegoddess = document.getElementById("qOneATwo");
-var band = document.getElementById("qOneAThree");
-function checkQ1Answers(){
-if (document.getElementById("qOneAOne").click == true){
+function checkQ1A1(){
 document.getElementById("resultQ1A1").show;
 }
-if (document.getElementById("qOneATwo").click == true){
+function checkQ1A2(){
 document.getElementById("resultQ1A2").show;
 }
-if (document.getElementById("qOneAThree").click == true){
+function checkQ1A3(){
 document.getElementById("resultQ1A3").show;
-}
-
 }
 </script>
 </html>
