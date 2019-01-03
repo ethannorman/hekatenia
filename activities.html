@@ -179,7 +179,15 @@ display: none;
 
   margin-bottom: 2rem;
 }
-
+#resultQ1A1{
+    margin-left: 8px;
+}
+#resultQ1A2{
+    margin-left: 8px;
+}
+#resultQ1A3{
+margin-left: 8px;
+}
   </style>
 	
   <body>
@@ -278,19 +286,19 @@ display: none;
                         <div id="answerChoices1" class="form-check">
   <input  class="form-check-input" type="radio" name="exampleRadios" id="qOneAOne" value="">
   <label class="form-check-label" for="qOneAOne">
-    A Weapon
+    A Weapon <span id="resultQ1A1">Incorrect</span>
   </label>
 </div>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="exampleRadios" id="qOneATwo" value="">
   <label class="form-check-label" for="qOneATwo">
-    A Triple Goddess
+    A Triple Goddess <span id="resultQ1A2">Correct</span>
   </label>
 </div>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="exampleRadios" id="qOneAThree" value="">
   <label class="form-check-label" for="qOneAThree">
-    A Band
+    A Band <span id="resultQ1A3">Incorrect</span>
   </label>
 </div>
                             </div>
@@ -363,12 +371,21 @@ $(document).ready(function(){
 var weapon = document.getElementById("#qOneAOne");
 var triplegoddess = document.getElementById("#qOneATwo");
 var band = document.getElementById("#qOneAThree");
-var clearanswers = [document.getElementById("qOneAOne").checked = false,
- document.getElementById("qOneATwo").checked = false, document.getElementById("qOneAThree").checked = false]
 function checkQ1Answers(){
-clearanswers = true;
-if (document.getElementById("qOneAOne").checked){
-alert("Incorrect!");
+if (document.getElementById("#qOneAOne").checked){
+document.getElementById("#resultQ1A1").show;
+} else {
+ document.getElementById("#resultQ1A1").hide;
+}
+if (document.getElementById("#qOneATwo").checked){
+document.getElementById("#resultQ1A2").show;
+} else {
+ document.getElementById("#resultQ1A2").hide;
+}
+if (document.getElementById("#qOneAThree").checked){
+document.getElementById("#resultQ1A3").show;
+} else {
+ document.getElementById("#resultQ1A3").hide;
 }
 
 }
