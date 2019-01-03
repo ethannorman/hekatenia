@@ -305,9 +305,6 @@ display: none;
   </label>
 </div>
                             </div>
-<button class="btn btn-check" onclick="checkQ1Answers()">
-    Check Answers
-</button>
                         </div>
                             </form>
                     </div>
@@ -375,20 +372,14 @@ var weapon = document.getElementById("qOneAOne");
 var triplegoddess = document.getElementById("qOneATwo");
 var band = document.getElementById("qOneAThree");
 function checkQ1Answers(){
-if (document.getElementById("qOneAOne").checked){
+if (document.getElementById("qOneAOne").onclick){
 document.getElementById("resultQ1A1").show;
-} else {
- document.getElementById("resultQ1A1").hide;
 }
-if (document.getElementById("qOneATwo").checked){
+if (document.getElementById("qOneATwo").onclick){
 document.getElementById("resultQ1A2").show;
-} else {
- document.getElementById("resultQ1A2").hide;
 }
-if (document.getElementById("qOneAThree").checked){
+if (document.getElementById("qOneAThree").onclick){
 document.getElementById("resultQ1A3").show;
-} else {
- document.getElementById("resultQ1A3").hide;
 }
 
 }
